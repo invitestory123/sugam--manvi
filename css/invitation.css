@@ -102,14 +102,15 @@ body{font-size:20px;line-height:1.65}.names{font-size:clamp(64px,15vw,88px);line
 .locked .media-controls{z-index:101}
 
 /* A distinct calligraphic signature for the couple, with space for flourishes. */
-.hero .names{font-family:"Imperial Script",Parisienne,cursive;font-size:clamp(76px,19vw,110px);font-weight:400;line-height:1.02;letter-spacing:0}
+.hero .names{font-family:"Imperial Script",Parisienne,cursive;font-size:clamp(76px,19vw,110px);font-weight:400;line-height:1.02;letter-spacing:0;outline:none}
+.hero .names:focus,.hero .names:focus-visible{outline:none}
 .hero .names span{padding:0 .08em .07em}
 .hero .names i{font-family:"Cormorant Garamond",Georgia,serif;font-size:25px;line-height:1.1;margin:-3px 0 1px}
 @media(max-width:360px){.hero .names{font-size:76px}}
 
 /* Hero supporting copy sits directly on the illustrated stationery. */
 .hero-copy .hero-note{margin:22px auto 0;max-width:240px;font-size:16px;line-height:1.5;text-shadow:0 1px 8px var(--paper),0 0 16px var(--paper)}
-.hero-copy .hero-link{margin-top:16px;font-size:11px;letter-spacing:.12em;text-shadow:0 1px 8px var(--paper)}
+.hero-copy .hero-link{margin-top:20px;font-size:11px;letter-spacing:.14em;text-shadow:0 1px 8px var(--paper)}
 
 /* Sugam & Manvi Custom Invitation Styling */
 .invocation {
@@ -446,7 +447,7 @@ body{font-size:20px;line-height:1.65}.names{font-size:clamp(64px,15vw,88px);line
 
 /* Custom Traditional RSVP Section */
 .rsvp-custom-section {
-  padding: 70px 24px 75px;
+  padding: 70px 24px 115px;
 }
 .rsvp-card-custom {
   max-width: 460px;
