@@ -122,17 +122,36 @@ body{font-size:20px;line-height:1.65}.names{font-size:clamp(64px,15vw,88px);line
   text-shadow: 0 1px 2px rgba(0,0,0,0.06);
 }
 .elders-intro {
-  margin: 12px auto 18px;
-  max-width: 380px;
+  margin: 14px auto 20px;
+  max-width: 500px;
+  text-align: center;
+  padding: 0 4px;
 }
-.grandparents-blessing {
+.grandparents-lead {
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: clamp(17px, 4.4vw, 21px);
+  font-size: clamp(16px, 4vw, 19px);
   font-style: italic;
   color: var(--ink);
-  margin: 0 auto;
-  line-height: 1.5;
+  margin: 0 auto 4px;
+  line-height: 1.4;
   opacity: 0.95;
+  display: block;
+}
+.grandparents-names {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(14px, 3.65vw, 18px);
+  font-style: italic;
+  font-weight: 600;
+  color: var(--accent);
+  margin: 0 auto;
+  line-height: 1.35;
+  display: block;
+  white-space: nowrap;
+}
+@media (max-width: 380px) {
+  .grandparents-names {
+    font-size: 13.5px;
+  }
 }
 .invitation-lead {
   font-family: "Cormorant Garamond", Georgia, serif;
@@ -423,4 +442,148 @@ body{font-size:20px;line-height:1.65}.names{font-size:clamp(64px,15vw,88px);line
   color: var(--ink);
   margin: 18px 0 0;
   font-weight: 600;
+}
+
+/* Custom Traditional RSVP Section */
+.rsvp-custom-section {
+  padding: 70px 24px 75px;
+}
+.rsvp-card-custom {
+  max-width: 460px;
+  margin: 0 auto;
+  background: color-mix(in srgb, var(--paper) 92%, white);
+  border: 1px solid color-mix(in srgb, var(--metal) 50%, transparent);
+  outline: 1px solid color-mix(in srgb, var(--metal) 30%, transparent);
+  outline-offset: 6px;
+  border-radius: 20px;
+  padding: 34px 22px 30px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+.rsvp-monogram {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid var(--metal);
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+  margin: 0 auto 8px;
+}
+.rsvp-mono-letters {
+  font-family: "Imperial Script", Parisienne, cursive;
+  font-size: 30px;
+  color: var(--accent);
+  letter-spacing: 2px;
+  line-height: 1;
+}
+.rsvp-couple-title {
+  font-family: "Imperial Script", Parisienne, cursive;
+  font-size: clamp(28px, 7vw, 36px);
+  color: var(--accent);
+  margin: 0 0 10px;
+  line-height: 1.15;
+}
+.rsvp-couple-title em {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-style: italic;
+  font-size: 0.55em;
+  color: var(--metal);
+  margin: 0 6px;
+  vertical-align: middle;
+}
+.rsvp-divider {
+  width: 44px;
+  height: 1px;
+  background: var(--metal);
+  margin: 12px auto 22px;
+  position: relative;
+}
+.rsvp-divider:after {
+  content: '✦';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 10px;
+  color: var(--metal);
+  background: color-mix(in srgb, var(--paper) 92%, white);
+  padding: 0 6px;
+}
+.rsvp-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 16px;
+  align-items: start;
+  text-align: center;
+}
+@media (max-width: 440px) {
+  .rsvp-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .rsvp-col-sep {
+    display: none;
+  }
+}
+.rsvp-col-sep {
+  width: 1px;
+  align-self: stretch;
+  background: color-mix(in srgb, var(--metal) 35%, transparent);
+  margin: 4px 0;
+}
+.rsvp-col-heading {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  margin: 0 0 12px;
+  text-transform: uppercase;
+}
+.rsvp-contacts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.rsvp-contacts-list li {
+  font-size: 16.5px;
+  line-height: 1.4;
+  color: var(--ink);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.contact-name {
+  font-weight: 600;
+  color: var(--ink);
+}
+.contact-dash {
+  color: var(--metal);
+}
+.contact-phone {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border-bottom: 1px dotted color-mix(in srgb, var(--accent) 50%, transparent);
+  transition: color 0.2s, border-color 0.2s;
+}
+.contact-phone:hover {
+  color: var(--metal);
+  border-bottom-style: solid;
+}
+.rsvp-regards-family {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 19px;
+  line-height: 1.5;
+  color: var(--ink);
+  margin: 0;
+  font-style: italic;
 }

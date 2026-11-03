@@ -9,7 +9,10 @@ window.WEDDING_DATA = {
     "brideFull": "Manvi",
     "groomParents": "S/o Mrs. Dimple Gupta & Mr. Anoop Gupta",
     "brideParents": "D/o Mrs. Sarika Sahu & Mr. Naresh Sahu of Kanpur",
-    "grandparents": "With the divine Blessings of Late Sh. Vinod Gupta & Late Smt. Kanta Gupta",
+    "grandparents": {
+      "lead": "With the divine blessings of",
+      "names": "Late Sh. Vinod Gupta & Late Smt. Kanta Gupta"
+    },
     "heroNote": "Together with our families",
     "subtitle": "Destiny brought them together, and now love will seal their bond forever."
   },
@@ -48,7 +51,7 @@ window.WEDDING_DATA = {
           "title": "Raise a Glass with Us! — Cocktail & Ring Ceremony",
           "subtitle": "Before the big vows and the happily-ever-after, let's toast to love, laughter, and a little bit of mischief!",
           "location": "Mohali Golf Range, Sector 65, Mohali",
-          "dressCode": "Cocktail Glamour / Festive Chic",
+          "dressCode": "Evening Glamour",
           "note": "In honour of the Ring Ceremony of Sugam & Manvi · Your presence will make the evening even more special!"
         }
       ]
@@ -69,7 +72,8 @@ window.WEDDING_DATA = {
           "time": "8:30 PM",
           "title": "Assembly of Baraat & Wedding Ceremony",
           "subtitle": "Grand procession followed by Varmala & Wedding Celebrations",
-          "location": "Palms Banquet, Zirakpur"
+          "location": "Palms Banquet, Zirakpur",
+          "dressCode": "Royal Traditional"
         }
       ]
     }
@@ -106,15 +110,31 @@ window.WEDDING_DATA = {
     "note": "We warmly look forward to celebrating with you."
   },
   "details": {
-    "dressCode": "Haldi: Sunny Vibes · Cocktail: Evening Glamour · Wedding: Royal Traditional",
-    "giftPreference": "Your warm presence and heartfelt blessings are our greatest gift.",
+    "dressCode": "",
+    "giftPreference": "",
     "blessing": {
       "message": "Your presence\nwill make our\ncelebrations complete.",
       "regards": "With love,",
       "family": "GUPTA FAMILY"
     }
   },
-  "rsvp": null,
+  "rsvp": {
+    "title": "R.S.V.P.",
+    "contacts": [
+      {
+        "name": "Tarun",
+        "phone": "98154-80218",
+        "tel": "+919815480218"
+      },
+      {
+        "name": "Anoop",
+        "phone": "98153-21000",
+        "tel": "+919815321000"
+      }
+    ],
+    "regardsTitle": "With Warm Regards:",
+    "regards": "Family & Friends"
+  },
   "media": {
     "openingVideo": "./media/opening.mp4",
     "openingPoster": "./media/opening-poster.webp",
